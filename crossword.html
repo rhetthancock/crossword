@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<title>Global Quality Crossword</title>
+<meta name="viewport" content="width=device-width">
+<link href="styles.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400,700,900&display=swap" rel="stylesheet">
+<script src="functions.js"></script>
+<body>
+    <div id="controls">
+        <div id="logobox">
+            <h1 id="logo">Crossword Puzzle</h1>
+        </div>
+        <div id="timer">
+            <span id="timer-minutes">00</span>
+            <span id="timer-colon">:</span>
+            <span id="timer-seconds">00</span>
+        </div>
+        <button class="icon" id="pause">Pause</button>
+        <div class="menu">
+            <label class="icon" id="clear">Clear</label>
+            <div class="submenu">
+                <button class="icon" id="clear-incorrect">Incorrect</button>
+                <button class="icon" id="clear-puzzle">Puzzle</button>
+            </div>
+        </div>
+        <button id="autocheck"><span class="off" id="chip">off</span>Autocheck</button>
+    </div>
+    <div id="main">
+        <div id="hints">
+            <div class="hints-group" id="hints-across">
+                <h2 class="hints-title">Across</h2>
+            </div>
+            <div class="hints-group" id="hints-down">
+                <h2 class="hints-title">Down</h2>
+            </div>
+        </div>
+        <div id="primary">
+            <div id="crossword-container">
+                <div id="crossword"></div>
+            </div>
+        </div>
+    </div>
+    <div id="overlay">
+        <button id="resume">Resume</button>
+        <div id="modal-clear-confirm">
+            <h2 class="message-confirm">Are you sure you want to clear the puzzle?</h2>
+            <div class="button-group">
+                <button id="clear-confirm">Clear Puzzle</button>
+                <button id="clear-cancel">Cancel</button>
+            </div>
+        </div>
+        <div id="modal-done">
+            <h2 class="message-confirm">Puzzle Complete!</h2>
+            <p id="done-text">Congratulations, you completed the crossword puzzle in 00:00</p>
+            <!--<button id="restart">Restart</button>-->
+            <button id="submit">Submit Score</button>
+        </div>
+    </div>
+</body>
+</html>
